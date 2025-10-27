@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoscaPack SAS</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Hoja de estilo externa -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="text-white text-center p-4">
+        <h1>FoscaPack SAS</h1>
+        <p>Fabricacion y venta de cubetas ecologicas para huevo</p>
+    </header>
+
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a href="#inicio" class="navbar-brand fw-bold text-succes">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-succes" href="#nosotros">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link text-succes" href="#productos">Productos</a></li>
+                <li class="nav-item"><a class="nav-link text-succes" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link text-succes" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container my-5" id="inicio">
+
+        <!-- Seccion Nosotros -->
+        <section id="nosotros" class="mb-5">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p><strong>FoscaPack SAS</strong> es una empresa Fosqueña dedicada a la produccion y comercializacion de cubetas ecologicas elaboradas con material reciclable. Nuestro proposito es ofrecer empaques resistentes, sostenibles y economicos para el sector avícola.</p>
+            <img src="./images/Logo.svg" alt="logo de la fabrica" class="img-fluid rounded shadow">
+        </section>
+
+        <!-- Seccion Productos -->
+        <section id="productos" class="mb-5">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <p>Contamos con una linea completa de cubetas para huevo fabricadas con carton reciclado y prensado industrial.</p>
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Capacidad</th>
+                        <th>Precio (COP)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cubeta estándar</td>
+                        <td>30 huevos</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Cubeta Reforzada</td>
+                        <td>30 huevos</td>
+                        <td>$800</td>
+                    </tr>
+                    <tr>
+                        <td>Cubeta pequeña</td>
+                        <td>12 huevos</td>
+                        <td>$400</td>
+                    </tr>
+                    <tr>
+                        <td>Empaque industrial</td>
+                        <td>360 huevos</td>
+                        <td>$9.500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seccion multimedia -->
+        <section id="galeria" class="mb-5">
+            <h2 class="section-title">Galeria y Produccion</h2>
+            <article class="mb-3">
+                <h3>Proceso de fabricación</h3>
+                <iframe src="https://www.youtube.com/embed/ELSm-G201Ls?si=zU_49dn9lHKVj3FJ" title="curso de html y css" allowfullscreen width="100%" height="1000px" class="rounded shadow"></iframe>
+            </article>
+            <article>
+                <h3>Ambiente de trabajo</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio.
+                </audio>
+            </article>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="section-title">Contactanos</h2>
+            <p>Dejanos tus datos y te enviaremos información sobre nuestros productos y precios al por mayor.</p>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required autofocus>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" required autocomplete="on">
+                </div>
+                <div class="col-md-6">
+                    <label for="fecha" class="form-label">Fecha de contacto</label>
+                    <input type="date" class="form-control" id="fecha" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" placeholder="+57 321 123 4321" required>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu consulta..." required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-warning text-dark fw-bold">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer id="contacto" class="text-center p-3">
+        <p>&copy; 2025 FoscaPack SAS | <a href="#inicio" class="text-white">Volver arriba</a></p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

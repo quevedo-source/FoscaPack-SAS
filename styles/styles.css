@@ -1,0 +1,97 @@
+/* ===== Colores Principales ===== */
+:root {
+    --verde: rgb(0, 121, 64);
+    --naranja-oscuro: rgb(244, 150, 60);
+    --naranja-claro: rgb(251, 169, 83);
+    --amarillo: rgb(253, 207, 52);
+    --blanco: rgb(255, 255, 255);
+}
+
+/* ===== Estilos Generales ===== */
+body {
+    background-color: var(--blanco);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: var(--verde);
+}
+
+footer {
+    background-color: var(--naranja-oscuro);
+    color: var(--blanco)
+}
+
+/* ===== Encabezados ===== */
+h1 {
+    color: var(--amarillo);
+}
+
+h2, h3 {
+    color: var(--verde);
+}
+
+.section-title {
+    border-left: 10px solid var(--amarillo);
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: var(--verde);
+    font-weight: bold;
+}
+
+/* ===== Imagenes ===== */
+img {
+    border: 4px solid var(--naranja-claro);
+    border-radius: 10px;
+}
+
+/* ===== Tabla ===== */
+table {
+    border: 4px solid var(--naranja-claro) !important;
+    border-radius: 10px !important;
+}
+
+table thead {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--naranja-claro);
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: var(--amarillo);
+}
+
+/* ===== Formulario ===== */
+form {
+    background-color: var(--naranja-claro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    color: var(--verde);
+}
+
+form input, form textarea {
+    border: 2px solid var(--verde);
+}
+
+form button:hover {
+    background-color: var(--naranja-oscuro) !important;
+}
+
+/* ===== Enlaces ===== */
+a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--amarillo) !important;
+    text-decoration: underline;
+}
