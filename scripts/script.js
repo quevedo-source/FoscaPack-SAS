@@ -84,13 +84,3 @@ if(precioEstandar < precioReforzada) {
 if(precioEstandar == 500) {
     console.log("Precio correcto de la cubeta estandar confirmado.");
 }
-
-// ====== Interaccion con el Usuario ======
-let respuesta = prompt("Quieres saber como cuidar tus cubetas ecologicas? (si/no)");
-if(respuesta && respuesta.toLowerCase() === "si") {
-    alert("Consejo: evita la humedad y guardalas en un lugar seco para prolongar su vida util.");
-}
-else {
-    alert("Perfecto, disfruta explorando nuestra web!")
-}
-
